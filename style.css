@@ -1,3 +1,6 @@
+html {
+    background-color: #c88ac3;
+}
 .main {
     display: flex;
     flex-direction: column;
@@ -6,10 +9,83 @@
     margin: 0 auto;
     margin-top: 25vh;
     /* width: 500px; */
+    background-color: #c88ac3;
 }
 
 .main h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
     text-align: center;
+}
+/* CSS */
+.button-1 {
+    background-color: #ea4c89;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial,
+        sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    /* height: 40px; */
+    /* line-height: 20px; */
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    /* position: relative; */
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+/* .button-1:hover,
+.button-1:focus {
+    background-color: #f082ac; */
+/* } */
+
+.btns {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#yes {
+    margin-left: -120px;
+    margin-right: 16px;
+    background-color: #3bd03b;
+    transition: all 0.1s ease;
+    /* font-size: 36px; */
+}
+/* #yes:hover,
+#yes:focus {
+    background-color: #7dff7d;
+} */
+
+#no {
+    left: 50px;
+    top: 0px;
+    width: 120px;
+    position: absolute;
+    transition: all 0.1s ease;
+}
+#img {
+    display: none;
+    /* transform: scale(15%); */
+    padding: 0;
+    margin-top: -1500px;
+    margin-bottom: -1400px;
+    transition: all 0.1s ease;
+    animation: all 0.1 ease;
+}
+#text {
+    color: white;
 }

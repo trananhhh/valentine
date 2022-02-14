@@ -16,15 +16,82 @@
     </head>
     <body>
         <div class="main">
-            <img
+            <!-- <img
                 src="https://miro.medium.com/max/1400/1*CsJ05WEGfunYMLGfsT2sXA.gif"
                 alt=""
                 srcset=""
-            />
-            <h1>
-                Món quà của chị quá nhiều tình cảm nên chúng em chưa load xong,
-                chị Minu hãy quay lại sau nhaaa!
-            </h1>
+            /> -->
+            <img src="./img.png" alt="" id="img" />
+            <h1 id="text">Em có đồng ý làm ngừi iu tui hongg?</h1>
+            <div class="btns">
+                <button
+                    id="yes"
+                    class="button-1"
+                    role="button"
+                    onclick="done()"
+                >
+                    Đương nhiên chùii</button
+                ><button
+                    id="no"
+                    class="button-1"
+                    role="button"
+                    onclick="changePosition(this)"
+                >
+                    Hong bé ơiii
+                </button>
+            </div>
         </div>
+        <script>
+            var lastX = -1;
+            var cnt = 0;
+
+            function done() {
+                var noBtn = document.getElementById('no');
+                var yesBtn = document.getElementById('yes');
+                var img = document.getElementById('img');
+                var tx = document.getElementById('text');
+                noBtn.style.display = 'none';
+                yesBtn.style.display = 'none';
+                img.style.display = 'block';
+                img.style.transform = 'scale(15%)';
+                tx.innerHTML = 'Khà khà tui có ngừi iu dồi mọi người ạaaa';
+            }
+
+            function changePosition(target) {
+                let x = Math.floor(Math.random() * 5);
+                if (x == lastX) changePosition(target);
+                if (cnt++ >= 10) {
+                    target.style.display = 'none';
+                    document.getElementById('yes').style.fontSize = '36px';
+                    document.getElementById('yes').style.marginLeft = '0px';
+                }
+                switch (x) {
+                    case 0:
+                        target.style.top = '100px';
+                        target.style.left = '150px';
+                        break;
+                    case 1:
+                        target.style.top = '-100px';
+                        target.style.left = '-100px';
+                        break;
+                    case 2:
+                        target.style.top = '150px';
+                        target.style.left = '-100px';
+                        break;
+                    case 3:
+                        target.style.top = '100px';
+                        target.style.left = '-250px';
+                        break;
+                    case 4:
+                        target.style.top = '180px';
+                        target.style.left = '-200px';
+                        break;
+                    case 5:
+                        target.style.top = '-200px';
+                        target.style.left = '-250px';
+                        break;
+                }
+            }
+        </script>
     </body>
 </html>
