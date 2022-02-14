@@ -65,10 +65,6 @@ html {
     transition: all 0.1s ease;
     /* font-size: 36px; */
 }
-/* #yes:hover,
-#yes:focus {
-    background-color: #7dff7d;
-} */
 
 #no {
     left: 50px;
@@ -78,11 +74,11 @@ html {
     transition: all 0.1s ease;
 }
 #img {
+    height: 400px;
     display: none;
-    /* transform: scale(15%); */
+    /* margin-top: -1300px; */
+    /* margin-bottom: -1400px; */
     padding: 0;
-    margin-top: -1500px;
-    margin-bottom: -1400px;
     transition: all 0.1s ease;
     animation: all 0.1 ease;
 }
