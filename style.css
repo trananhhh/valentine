@@ -3,9 +3,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30vh;
-    width: 500px;
     margin: 0 auto;
+    margin-top: 25vh;
+    /* width: 500px; */
 }
 
 .main h1 {
