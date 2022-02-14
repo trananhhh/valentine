@@ -74,7 +74,8 @@ html {
     transition: all 0.1s ease;
 }
 #img {
-    height: 400px;
+    max-height: 400px;
+    max-width: 50%;
     display: none;
     /* margin-top: -1300px; */
     /* margin-bottom: -1400px; */
